@@ -1,0 +1,45 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    background-color: #282c34;
+    color: white;
+    transition: width 0.3s;
+    overflow-x: hidden;
+    z-index: 1000;
+  }
+  
+  .sidebar.expanded {
+    width: 200px;
+  }
+  
+  .toggle-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .sidebar nav li {
+    padding: 10px 20px;
+  }
+  
+  .sidebar nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sidebar nav a:hover {
+    text-decoration: underline;
+  }
