@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Sidebar.css';
+import './sidebar.css';
 
 function Sidebar() {
   const [expanded, setExpanded] = useState(false);
@@ -11,10 +11,26 @@ function Sidebar() {
       </button>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#about">
+                <span className="label">About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects">
+            <span className="label">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#Resume">
+            <span className="label">Resume</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+            <span className="label">Contact</span>
+            </a>
+          </li>
         </ul>
       </nav>
     </div>

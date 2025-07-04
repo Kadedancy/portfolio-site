@@ -1,21 +1,21 @@
 .sidebar {
     position: fixed;
-    left: 0;
     top: 0;
     bottom: 0;
+    left: 0;
     width: 60px;
     background-color: #282c34;
     color: white;
-    transition: width 0.3s;
+    transition: width 0.3s ease;
     overflow-x: hidden;
     z-index: 1000;
   }
   
-  .sidebar.expanded {
+.sidebar.expanded {
     width: 200px;
   }
   
-  .toggle-btn {
+.toggle-btn {
     background: none;
     border: none;
     color: white;
@@ -23,23 +23,40 @@
     padding: 10px;
     cursor: pointer;
     text-align: left;
+    width: 100%;
   }
   
-  .sidebar nav ul {
+.sidebar nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 20px;
+    margin: 20px 0 0;
   }
   
-  .sidebar nav li {
+.sidebar nav li {
     padding: 10px 20px;
   }
   
-  .sidebar nav a {
+.sidebar nav a {
+    display: flex;
+    align-items: center;
     color: white;
     text-decoration: none;
   }
   
-  .sidebar nav a:hover {
-    text-decoration: underline;
+.sidebar nav .icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  /* Hide text when not expanded */
+.sidebar .label {
+    opacity: 0;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: opacity 0.3s ease, width 0.3s ease;
+  }
+  
+.sidebar.expanded .label {
+    opacity: 1;
+    width: auto;
   }
