@@ -1,10 +1,36 @@
 .App {
+  width: auto;
   text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.MainDiv {
+  height: auto;
+  background-color: #bbbbbb;
+  border-radius: 10px;
+ 
+}
+
+p {
+  font-size: 32px;
+  line-height: 1.6;
+}
+
+.SectionLine {
+  font-size: 64px;
+  line-height: 1.6;
+  font-weight: bold;
+  text-decoration: underline;
+  padding-left: 25px;
+}
+.SectionItems {
+  word-spacing: 50px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
